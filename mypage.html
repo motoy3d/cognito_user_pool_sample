@@ -1,18 +1,15 @@
 <html>
-
 <head>
     <meta charset='utf-8'>
-    <title>user pool sapmle</title>
+    <title>Cognito User Pools Sample</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
     <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-
-    <script src="/lib/aws-cognito-sdk.min.js"></script>
-    <script src="/lib/amazon-cognito-identity.min.js"></script>
+    <script src="lib/aws-cognito-sdk.min.js"></script>
+    <script src="lib/amazon-cognito-identity.min.js"></script>
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.108.0.min.js"></script>
-    <script src='/app.js'></script>
+    <script src='app.js'></script>
 </head>
-
 <body>
     <div class="container">
         <div class="mypage">
@@ -26,8 +23,8 @@
         </form>
     </div>
     <script type='text/javascript'>
-        $('#logoutButton').click(upsample.logout);
-        $(window).ready(upsample.checkSession);
+        $('#logoutButton').click(userPools.logout);
+        $(window).ready(userPools.checkSession);
     </script>
 </body>
 
